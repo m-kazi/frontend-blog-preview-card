@@ -1,0 +1,113 @@
+.attribution {
+    font-size: 11px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* custom properties */
+
+:root {
+    --clr-primary: hsl(47, 88%, 63%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-400: hsl(0, 0%, 50%);
+    --clr-neutral-900: hsl(0, 0%, 7%);
+
+    --ff-base: "Figtree", sans-serif;
+
+    --fw-semibold: 600;
+    --fw-bold: 800;
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+
+body {
+    background-color: var(--clr-primary);
+    font-family: var(--ff-base);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card styling */
+
+.card {
+    background-color: var(--clr-neutral-100);
+    max-width: 350px;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 10px 10px 0px 0px;
+}
+
+.card__main-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.learning {
+    display: inline-block;
+    background-color: var(--clr-primary);
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font: inherit;
+    font-weight: var(--fw-bold);
+}
+
+.published {
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+h1 a {
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 1;
+    font-size: 22px;
+}
+
+h1 a:hover {
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+
+.card__content-p {
+    color: var(--clr-neutral-400);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__author-name {
+    font-weight: var(--fw-bold);
+}
+
+.card__author img {
+    width: 30px;
+}
